@@ -230,6 +230,9 @@
           desc=sc[k].Description;
           do{
             var person = prompt("Please enter the password", "");
+            var date,city;
+            var storeD=[];
+            var storeC=[];
               if (person ==password) {
               p++;
               document.getElementById("clientname").innerHTML="Pacakage for"+":"+client;
@@ -239,14 +242,24 @@
               document.getElementById("dwnldbtns").innerHTML+=`
               <button class="w3-btn w3-blue-grey" onclick=submitForm("`+k+`")>Accept</button>
               <button type="button" class="w3-btn w3-black" onclick="signaturePad.clear();">Reset</button>`
+
+
               for(var obkey in obj)
               {
+
+
                 var events=obj[obkey].split(",");
+
+                if(!(obkey.includes("City")||obkey.includes("Date"))) {
+
                 document.getElementById("listevents").innerHTML+=
                 `<div class="w3-third w3-margin-bottom">
                   <ul class="w3-ul w3-border w3-hover-shadow">
                     <li class="w3-theme">
                       <p class="w3-large">`+obkey+`</p>
+                      <p class="w3-small">On` +":"+obj["Date"+obkey]+`</p>
+                      <p class="w3-small">In` +":"+obj["City"+obkey]+`</p>
+
                     </li>
                     <div id="liclass`+obkey+`">
 
@@ -262,6 +275,7 @@
                     document.getElementById("liclass"+obkey+"").innerHTML+=`<li class="w3-padding-16"><b>`+events[k]+`</b> </li>`
                 }
               }
+            }
 
             }else{
               alert("Password Incorrect!!")
@@ -331,59 +345,6 @@
         });
       });
     }
-    // var getCanvas;
-    // $(document).ready(function() {
-
-    // // Global variable
-    // var element = $("#html-content-holder");
-    // html2canvas(element, {
-    //   onrendered: function(canvas) {
-    // getCanvas = canvas;
-    // var imgageData =
-    //   getCanvas.toDataURL("image/jpg",1.0);
-
-
-    // // Now browser starts downloading
-    // // it instead of just showing it
-    // newData = imgageData.replace(
-    // /^data:image\/jpg/, "data:application/octet-stream");
-
-    // $("#btn-Convert-Html2Image").attr(
-    // "download", "contract.jpg").attr(
-    // "href", newData);
-
-
-    // }
-
-    // });
-
-    // // Global variable
-
-
-    // });
-
-    //   $("#btn-Convert-Html2Image").on('click', function() {
-
-    //     html2canvas(element, {
-    //       onrendered: function(canvas) {
-    //     getCanvas = canvas;
-    //     var imgageData =
-    //       getCanvas.toDataURL("image/jpg",1.0);
-
-
-    //     // Now browser starts downloading
-    //     // it instead of just showing it
-    //     newData = imgageData.replace(
-    //     /^data:image\/jpg/, "data:application/octet-stream");
-
-    //     $("#btn-Convert-Html2Image").attr(
-    //     "download", "contract.jpg").attr(
-    //     "href", newData);
-
-    //     }
-
-    //     });
-    //   });
 
 </script>
 
