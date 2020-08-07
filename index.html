@@ -41,18 +41,25 @@
   </div>
 </div>
 <h2 style=";font-size: 1.5em;text-align: center;font-weight: 900" id="budget">Loading...</h2>
-
-
 <br>
-
+<hr style="border:1px solid darkgrey;width: 70%;margin-left: 15%">
+<h2 style="text-align: center;color: black"><b>Deliverables By Us</b></h2>
+<div class="w3-card-d4 o  " id="contact" style="width: 70%;margin-left: 15%;border:1px solid black;border-radius: 20px;background-color: rgb(0,0,0,0.2);">
+  <div class="w3-row">
+    <div class="w3-col m12">
+      <p id="service" style="text-align: center;"><b>Loading..</b></p>
+    </div>
+  </div>
+</div>
+<br>
 <!-- Contact Container -->
 <div class="w3-container o w3-brown" id="contact">
   <!-- <h3 id="mainevent">Description</h3><br> -->
   <div class="w3-row">
     <div class="w3-col m12">
       <p id="descripition" style="text-align: center;">Loading..</p>
+    </div>
   </div>
-</div>
 </div>
 <section id="comehere">
 <div class="w3-container" >
@@ -228,6 +235,7 @@
           password=sc[k].Password;
           obj=sc[k].Facilities;
           desc=sc[k].Description;
+          service=sc[k].Service;
           do{
             var person = prompt("Please enter the password", "");
             var date,city;
@@ -239,6 +247,7 @@
               document.getElementById("mainevent").innerHTML=mainname;
               document.getElementById("descripition").innerHTML=desc;
               document.getElementById("budget").innerHTML="Package Budget"+"="+price+" "+"Rs";
+              document.getElementById("service").innerHTML=service;
               document.getElementById("dwnldbtns").innerHTML+=`
               <button class="w3-btn w3-blue-grey" onclick=submitForm("`+k+`")>Accept</button>
               <button type="button" class="w3-btn w3-black" onclick="signaturePad.clear();">Reset</button>`
