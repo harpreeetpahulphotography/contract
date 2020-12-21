@@ -7,148 +7,156 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
-  <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
-  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+</script>
 
-  <script src=
-"https://files.codepedia.info/files/uploads/iScripts/html2canvas.js">
-  </script>
+<!-- <script src=
+"https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"> -->
+
+<script src="html2c.min.js"></script>
+<!-- <script src="https://unpkg.com/html2canvas@1.0.0-alpha.9/dist/html2canvas.js"></script> -->
+
 <style type="text/css">
-    .m-signature-pad--body canvas {
-        position: relative;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 250px;
-        border: 1px solid #CCCCCC;
-    }
+  .m-signature-pad--body canvas {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 250px;
+    border: 1px solid #CCCCCC;
+  }
 </style>
-<body id="myPage">
-<!-- Image Header -->
-<div class="w3-display-container ">
-  <img src="contract.png"  style="width:100%;">
-  <div class="w3-container w3-display-bottomleft w3-margin-bottom">
-    <!-- <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LEARN W3.CSS</button> -->
-  </div>
-</div>
-<!-- Pricing Row -->
-<div id="html-content-holder">
-<div class="w3-row-padding w3-center " id="pricing" >
-    <h2 style="background-color:orange" id="clientname">Loading</h2>
-    <p >Name of the Event:</p><h3 id="mainevent">Loading..</h3><br>
-    <div id="listevents" class="w3-center">
-  </div>
-</div>
-<h2 style=";font-size: 1.5em;text-align: center;font-weight: 900" id="budget">Loading...</h2>
-<br>
-<hr style="border:1px solid darkgrey;width: 70%;margin-left: 15%">
-<h2 style="text-align: center;color: black"><b>Deliverables By Us</b></h2>
-<div class="w3-card-d4 o  " id="contact" style="width: 70%;margin-left: 15%;border:1px solid black;border-radius: 20px;background-color: rgb(0,0,0,0.2);">
-  <div class="w3-row">
-    <div class="w3-col m12">
-      <p id="service" style="text-align: center;"><b>Loading..</b></p>
-    </div>
-  </div>
-</div>
-<br>
-<!-- Contact Container -->
-<div class="w3-container o w3-brown" id="contact">
-  <!-- <h3 id="mainevent">Description</h3><br> -->
-  <div class="w3-row">
-    <div class="w3-col m12">
-      <p id="descripition" style="text-align: center;">Loading..</p>
-    </div>
-  </div>
-</div>
-<section id="comehere">
-<div class="w3-container" >
-    <h1 style="font-size: 1.5em">Sign here to confirm the package </h1>
 
-    <div id="signature-pad" class="m-signature-pad">
-        <div class="m-signature-pad--body">
+<body id="myPage">
+  <!-- Image Header -->
+  <div class="w3-display-container ">
+    <img src="contract.png" style="width:100%;">
+    <div class="w3-container w3-display-bottomleft w3-margin-bottom">
+      <!-- <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LEARN W3.CSS</button> -->
+    </div>
+  </div>
+  <!-- Pricing Row -->
+  <div id="html-content-holder">
+    <div class="w3-row-padding w3-center " id="pricing">
+      <h2 style="background-color:orange" id="clientname">Loading</h2>
+      <p>Name of the Event:</p>
+      <h3 id="mainevent">Loading..</h3><br>
+      <div id="listevents" class="w3-center">
+      </div>
+    </div>
+    <h2 style=";font-size: 1.5em;text-align: center;font-weight: 900" id="budget">Loading...</h2>
+    <br>
+    <hr style="border:1px solid darkgrey;width: 70%;margin-left: 15%">
+    <h2 style="text-align: center;color: black"><b>Deliverables By Us</b></h2>
+    <div class="w3-card-d4 o  " id="contact"
+      style="width: 70%;margin-left: 15%;border:1px solid black;border-radius: 20px;background-color: rgb(0,0,0,0.2);">
+      <div class="w3-row">
+        <div class="w3-col m12">
+          <p id="service" style="text-align: center;"><b>Loading..</b></p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Contact Container -->
+    <div class="w3-container o w3-brown" id="contact">
+      <!-- <h3 id="mainevent">Description</h3><br> -->
+      <div class="w3-row">
+        <div class="w3-col m12">
+          <p id="descripition" style="text-align: center;">Loading..</p>
+        </div>
+      </div>
+    </div>
+    <section id="comehere">
+      <div class="w3-container">
+        <h1 style="font-size: 1.5em">Sign here to confirm the package </h1>
+
+        <div id="signature-pad" class="m-signature-pad">
+          <div class="m-signature-pad--body">
             <canvas id="as"></canvas>
             <input type="hidden" name="signature" id="signature" value="">
+          </div>
         </div>
-    </div>
-</div>
-</div>
-<div id="dwnldbtns">
-</div>
-
-        <!-- <button type="button" class="w3-btn w3-red" onclick="download('sig.png');">Download</button> -->
-
-
-
-<br>
-<!-- <input id="btn-Preview-Image" type="button"
-      value="Preview" />  -->
-
-<a id="btn-Convert-Html2Image" href="#" class="w3-button w3-border-black w3-khaki" style="display: none">
-  Download Contract copy
-</a>
-
-<br>
-</section>
-
-
-<!-- <h3>Preview :</h3>  -->
-
-<div id="previewImage"></div>
-<div class="w3-container o w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-black w3-bottombar">Note</span></div>
-
-      <p style="color: red">* In case of cancellation of booking,advance paid amount will not be refund</p>
-      <p style="color: red">* We will use your photos on Social sites for pro,otion of our work</p>
-    </div>
+      </div>
+  </div>
+  <div id="dwnldbtns">
   </div>
 
-
-<!-- Image of location/map -->
-
-
-<!-- Footer -->
-<footer class="w3-container  w3-center">
-  <h4>Follow Us </h4>
-  <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/Hapreetpahulphotography" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-button w3-large w3-teal" href="https://instagram.com/harpreetpahulphotography?igshid=yxhqxjgubtr7" title="Twitter"><i class="fa fa-instagram"></i></a>
-  <a class="w3-button w3-large w3-teal" href="https://api.whatsapp.com/send?phone=919506449275" title=""><i class="fa fa-whatsapp"></i></a>
+  <!-- <button type="button" class="w3-btn w3-red" onclick="download('sig.png');">Download</button> -->
 
 
-  <p><small>&copy; Copyright 2020, <a style="text-decoration: none;">Harpreet Pahul Photography</a></p>
+
+  <br>
+  <!-- <input id="btn-Preview-Image" type="button"
+      value="Preview" />  -->
+
+  <a id="btn-Convert-Html2Image" href="#" class="w3-button w3-border-black w3-khaki" style="display: none">
+    Download Contract copy
+  </a>
+
+  <br>
+  </section>
 
 
-<!--   <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+  <!-- <h3>Preview :</h3>  -->
+
+  <div id="previewImage"></div>
+  <div class="w3-container o w3-theme-l5" id="contact">
+    <div class="w3-row">
+      <div class="w3-col m5">
+        <div class="w3-padding-16"><span class="w3-xlarge w3-border-black w3-bottombar">Note</span></div>
+
+        <p style="color: red">* In case of cancellation of booking,advance paid amount will not be refund</p>
+        <p style="color: red">* We will use your photos on Social sites for promotion of our work</p>
+      </div>
+    </div>
+
+
+    <!-- Image of location/map -->
+
+
+    <!-- Footer -->
+    <footer class="w3-container  w3-center">
+      <h4>Follow Us </h4>
+      <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/Hapreetpahulphotography" title="Facebook"><i
+          class="fa fa-facebook"></i></a>
+      <a class="w3-button w3-large w3-teal" href="https://instagram.com/harpreetpahulphotography?igshid=yxhqxjgubtr7"
+        title="Twitter"><i class="fa fa-instagram"></i></a>
+      <a class="w3-button w3-large w3-teal" href="https://api.whatsapp.com/send?phone=919506449275" title=""><i
+          class="fa fa-whatsapp"></i></a>
+
+
+      <p><small>&copy; Copyright 2020, <a style="text-decoration: none;">Harpreet Pahul Photography</a></p>
+
+
+      <!--   <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
     <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
     <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div> -->
-</footer>
+    </footer>
 </body>
 <script src="signature_pad.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase.js"></script>
 
 
-<script >
+<script>
 
 
   var wrapper = document.getElementById("signature-pad"),
-     canvas = wrapper.querySelector("canvas"),
-     signaturePad;
+    canvas = wrapper.querySelector("canvas"),
+    signaturePad;
 
   /**
   *  Behandlung der Größenänderung der Unterschriftenfelds
   */
   function resizeCanvas() {
-      var oldContent = signaturePad.toData();
-      var ratio =  Math.max(window.devicePixelRatio || 1, 1);
-      canvas.width = canvas.offsetWidth * ratio;
-      canvas.height = canvas.offsetHeight * ratio;
-      canvas.getContext("2d").scale(ratio, ratio);
-      signaturePad.clear();
-      signaturePad.fromData(oldContent);
+    var oldContent = signaturePad.toData();
+    var ratio = Math.max(window.devicePixelRatio || 1, 1);
+    canvas.width = canvas.offsetWidth * ratio;
+    canvas.height = canvas.offsetHeight * ratio;
+    canvas.getContext("2d").scale(ratio, ratio);
+    signaturePad.clear();
+    signaturePad.fromData(oldContent);
   }
 
 
@@ -205,155 +213,197 @@
   window.onresize = resizeCanvas;
   resizeCanvas();
   var firebaseConfig = {
-        apiKey: "AIzaSyCPqE2ec9UFt9VnPU3i4wsC2-Le23GpgPc",
-        authDomain: "harpreetpahulphotography-f2d09.firebaseapp.com",
-        databaseURL: "https://harpreetpahulphotography-f2d09.firebaseio.com",
-        projectId: "harpreetpahulphotography-f2d09",
-        storageBucket: "harpreetpahulphotography-f2d09.appspot.com",
-        messagingSenderId: "1061490631813",
-        appId: "1:1061490631813:web:5ac0debcacb8f7e71a75ec"
-      };
-      firebase.initializeApp(firebaseConfig);
-      var ref2= firebase.database().ref('allEvents');
-      var k;
-      ref2.on('value',gotData,errData);
+    apiKey: "AIzaSyCPqE2ec9UFt9VnPU3i4wsC2-Le23GpgPc",
+    authDomain: "harpreetpahulphotography-f2d09.firebaseapp.com",
+    databaseURL: "https://harpreetpahulphotography-f2d09.firebaseio.com",
+    projectId: "harpreetpahulphotography-f2d09",
+    storageBucket: "harpreetpahulphotography-f2d09.appspot.com",
+    messagingSenderId: "1061490631813",
+    appId: "1:1061490631813:web:5ac0debcacb8f7e71a75ec"
+  };
+  firebase.initializeApp(firebaseConfig);
+  var ref2 = firebase.database().ref('allEvents');
+  var k;
+  ref2.on('value', gotData, errData);
 
-      function gotData(data){
+  function gotData(data) {
 
-        var sc=data.val();
-        var obj={}
-        keys=Object.keys(sc);
-        $('#listevents').empty();
-        $('#dwnldbtns').empty();
-        p=0;
-        for(var i=0;i<keys.length;i++){
-          count=0;
-          k=keys[i];
-          mainname=sc[k].EventName;
-          client=sc[k].Client;
-          price=sc[k].Budget;
-          password=sc[k].Password;
-          obj=sc[k].Facilities;
-          desc=sc[k].Description;
-          service=sc[k].Service;
-          do{
-            var person = prompt("Please enter the password", "");
-            var date,city;
-            var storeD=[];
-            var storeC=[];
-              if (person ==password) {
-              p++;
-              document.getElementById("clientname").innerHTML="Pacakage for"+":"+client;
-              document.getElementById("mainevent").innerHTML=mainname;
-              document.getElementById("descripition").innerHTML=desc;
-              document.getElementById("budget").innerHTML="Package Budget"+"="+price+" "+"Rs";
-              document.getElementById("service").innerHTML=service;
-              document.getElementById("dwnldbtns").innerHTML+=`
-              <button class="w3-btn w3-blue-grey" onclick=submitForm("`+k+`")>Accept</button>
+    var sc = data.val();
+    var obj = {}
+    keys = Object.keys(sc);
+    $('#listevents').empty();
+    $('#dwnldbtns').empty();
+    p = 0;
+    for (var i = 0; i < keys.length; i++) {
+      count = 0;
+      k = keys[i];
+      mainname = sc[k].EventName;
+      client = sc[k].Client;
+      price = sc[k].Budget;
+      password = sc[k].Password;
+      obj = sc[k].Facilities;
+      desc = sc[k].Description;
+      service = sc[k].Service;
+      do {
+        var person = prompt("Please enter the password", "");
+        var date, city;
+        var storeD = [];
+        var storeC = [];
+        if (person == password) {
+          p++;
+          document.getElementById("clientname").innerHTML = "Package for" + ":" + client;
+          document.getElementById("mainevent").innerHTML = mainname;
+          document.getElementById("descripition").innerHTML = desc;
+          document.getElementById("budget").innerHTML = "Package Budget" + "=" + price + " " + "Rs";
+          document.getElementById("service").innerHTML = service;
+          document.getElementById("dwnldbtns").innerHTML += `
+              <button class="w3-btn w3-blue-grey" onclick=submitForm("`+ k + `")>Accept</button>
               <button type="button" class="w3-btn w3-black" onclick="signaturePad.clear();">Reset</button>`
 
 
-              for(var obkey in obj)
-              {
+          for (var obkey in obj) {
 
 
-                var events=obj[obkey].split(",");
+            var events = obj[obkey].split(",");
 
-                if(!(obkey.includes("City")||obkey.includes("Date"))) {
+            if (!(obkey.includes("City") || obkey.includes("Date"))) {
 
-                document.getElementById("listevents").innerHTML+=
+              document.getElementById("listevents").innerHTML +=
                 `<div class="w3-third w3-margin-bottom">
                   <ul class="w3-ul w3-border w3-hover-shadow">
                     <li class="w3-theme">
-                      <p class="w3-large">`+obkey+`</p>
-                      <p class="w3-small">On` +":"+obj["Date"+obkey]+`</p>
-                      <p class="w3-small">In` +":"+obj["City"+obkey]+`</p>
+                      <p class="w3-large">`+ obkey + `</p>
+                      <p class="w3-small">On` + ":" + obj["Date" + obkey] + `</p>
+                      <p class="w3-small">In` + ":" + obj["City" + obkey] + `</p>
 
                     </li>
-                    <div id="liclass`+obkey+`">
+                    <div id="liclass`+ obkey + `">
 
                     </div>
                   </ul>
                 </div>`
 
-                for(var k=0;k<events.length;k++){
-                  if(events[k].includes("undefined") ){
-                    events[k]=events[k].substring(9)
-                  }
-                  if(events[k]!="")
-                    document.getElementById("liclass"+obkey+"").innerHTML+=`<li class="w3-padding-16"><b>`+events[k]+`</b> </li>`
+              for (var k = 0; k < events.length; k++) {
+                if (events[k].includes("undefined")) {
+                  events[k] = events[k].substring(9)
                 }
+                if (events[k] != "")
+                  document.getElementById("liclass" + obkey + "").innerHTML += `<li class="w3-padding-16"><b>` + events[k] + `</b> </li>`
               }
             }
+          }
 
-            }else{
-              alert("Password Incorrect!!")
+        } else {
+          alert("Password Incorrect!!")
 
-            }
-          }while(p==0)
-
-
-         }
-
-      }
-
-    function errData(){
-
-      }
-      var newData;
+        }
+      } while (p == 0)
 
 
-    // $("#btn-Preview-Image").on('click', function() {
-    //   html2canvas(element, {
-    //     onrendered: function(canvas) {
-    //       $("#previewImage").append(canvas);
-    //       getCanvas = canvas;
+    }
+
+  }
+
+  function errData() {
+
+  }
+  var newData;
+
+
+  // $("#btn-Preview-Image").on('click', function() {
+  //   html2canvas(element, {
+  //     onrendered: function(canvas) {
+  //       $("#previewImage").append(canvas);
+  //       getCanvas = canvas;
+  //     }
+  //   });
+  // });
+
+  function submitForm(keyid) {
+
+
+
+    // Global variable
+    // var element = $("#html-content-holder");
+    // var container = document.getElementById("html-content-holder");
+
+    //   html2canvas(document.querySelector("#html-content-holder")).then(canvas => {
+
+    //     //  var canvas= window.html2canvas( document.getElementById("html-content-holder"), {
+
+    //     //     onrendered:function(canvas) {
+    //     //       alert(canvas)
+
+
+    //     var getCanvas = canvas;
+    //     // alert(9)
+    //     var imgageData = canvas.toDataURL("image/jpg", 1.0);
+    //     console.log(imgageData)
+    //     let newData = imgageData.replace(/^data:image\/jpg/, "data:application/octet-stream");
+    //     console.log(newData)
+    //     $("#btn-Convert-Html2Image").attr(
+    //       "download", "contract.jpg").attr(
+    //         "href", newData);
+
+    //     Image = newData;
+
+    //     data = { Image }
+
+    //     var ans = confirm("Are you sure to sign the contract")
+
+    //     //Unterschrift in verstecktes Feld übernehmen
+    //     if (ans) {
+
+    //       firebase.database().ref("allEvents").child(keyid).update(data);
+    //       alert("Thankyou for confirmation")
+    //       document.getElementById("btn-Convert-Html2Image").style.display = "block"
+    //     } else {
+    //       location.reload();
+
     //     }
+
     //   });
     // });
 
-    function submitForm(keyid){
+    html2canvas([document.getElementById('html-content-holder')], {
+      onrendered: function (canvas) {
 
+        var data = canvas.toDataURL('image/png');
+        // AJAX call to send `data` to a PHP file that creates an image from the dataURI string and saves it to a directory on the server
 
-      $(document).ready(function() {
+        var image = new Image();
+        image.src = data;
+        // document.getElementById('image').appendChild(image);
 
+        var imgageData = canvas.toDataURL("image/jpg", 1.0);
 
-      // Global variable
-        var element = $("#html-content-holder");
+        let newData = imgageData.replace(/^data:image\/jpg/, "data:application/octet-stream");
 
-        html2canvas(element, {
-          onrendered:function(canvas) {
-
-            getCanvas = canvas;
-
-            var imgageData =getCanvas.toDataURL("image/jpg",1.0);
-
-            newData = imgageData.replace(/^data:image\/jpg/, "data:application/octet-stream");
-
-            $("#btn-Convert-Html2Image").attr(
-            "download", "contract.jpg").attr(
+        $("#btn-Convert-Html2Image").attr(
+          "download", "contract.jpg").attr(
             "href", newData);
 
-            Image=newData;
+        Image = newData;
 
-            data={Image}
+        data = { Image }
 
-            var ans=confirm("Are you sure to sign the contract")
+        var ans = confirm("Are you sure to sign the contract")
 
-          //Unterschrift in verstecktes Feld übernehmen
-            if(ans){
+        //Unterschrift in verstecktes Feld übernehmen
+        if (ans) {
 
-              firebase.database().ref("allEvents").child(keyid).update(data);
-              alert("Thankyou for confirmation")
-              document.getElementById("btn-Convert-Html2Image").style.display="block"
-            }else{
-              location.reload();
+          firebase.database().ref("allEvents").child(keyid).update(data);
+          alert("Thankyou for confirmation")
+          document.getElementById("btn-Convert-Html2Image").style.display = "block"
+        } else {
+          location.reload();
 
-            }
-          }
-        });
-      });
-    }
+        }
+
+
+      }
+    });
+  }
 
 </script>
 
